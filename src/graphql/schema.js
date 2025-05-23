@@ -6,8 +6,13 @@ const typeDefs = `
     description: String
   }
 
+  input EventFilter {
+    name: String
+    description: String
+  }
+
   type Query {
-    events: [Event]
+    events(limit: Int, offset: Int, filter: EventFilter, search: String): [Event]
     event(id: ID!): Event
   }
 `;

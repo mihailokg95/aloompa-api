@@ -1,0 +1,20 @@
+
+{
+  "name": "netlify-graphql-api",
+  "version": "1.0.0",
+  "description": "Simple GraphQL API for events deployed on Netlify",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "netlify dev",
+    "build": "netlify build"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.9.5",
+    "@as-integrations/aws-lambda": "^3.1.0",
+    "graphql": "^16.8.1"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  }
+}

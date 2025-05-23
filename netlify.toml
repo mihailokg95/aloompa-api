@@ -1,7 +1,10 @@
 [build]
-  command = "npm run build"
   functions = "functions"
   publish = "public"
+
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["@apollo/server", "@as-integrations/aws-lambda"]
 
 [dev]
   functions = "functions"

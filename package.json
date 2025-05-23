@@ -1,4 +1,3 @@
-
 {
   "name": "netlify-graphql-api",
   "version": "1.0.0",
@@ -6,8 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "netlify dev",
-    "build": "netlify build"
+    "start": "netlify dev"
   },
   "dependencies": {
     "@apollo/server": "^4.9.5",
@@ -16,5 +14,8 @@
   },
   "devDependencies": {
     "netlify-cli": "^17.0.0"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
